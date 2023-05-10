@@ -56,6 +56,7 @@ export default function DefiLottery() {
   const [lotteryDetails4, setLotteryDetails4] = useState(false);
   const [lotteryRound, setLotteryRound] = useState(false);
   const [buyTicketBox, setBuyTicketBox] = useState(false);
+  const [time, setTime] = useState(new Date());
   const [showConnectWallet, setShowConnectWallet] = useState(false);
   const [menu, setMenu] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
@@ -139,7 +140,7 @@ export default function DefiLottery() {
     setLotteryDetails31(false);
   };
 
-  const [time, setTime] = useState(new Date());
+ 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -867,7 +868,7 @@ export default function DefiLottery() {
         </p>
         <div className="ticketMainArea">
           <div className="ticketHeading">
-            Next Draw <span>#{lotteryID} | Draw: {formattedDate}</span>
+            Next Draw <span>#{lotteryID} </span>
           </div>
           <div className="ticketBody">
             <h2>
